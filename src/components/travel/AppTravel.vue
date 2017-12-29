@@ -1,15 +1,15 @@
 <template lang="html">
   
-  <div class="app-find ">
+  <div class="app-travel ">
       <app-footer ></app-footer>  
-    <h1>发现</h1>
+    <h1>游记</h1>
   </div>
 </template>
 
 <script>
 import AppFooter from '../main/AppFooter.vue'
 export default {
-  name:'app-find',
+  name:'app-travel',
   components:{
     AppFooter
   }

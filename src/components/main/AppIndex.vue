@@ -11,15 +11,15 @@
       </div>
     </header>
     <section >
-        <h1>轮播图</h1>
+        <img src="http://gallery.youxiake.com/Public/Data/upload/201711/30/56551512010265.jpg"/>
     </section>
     <nav>
       <ul>
-        <li>附近</li>
-        <li>目的地</li>
-        <li>酒店</li>
-        <li>美食</li>
-        <li>地图</li>
+        <li @click="skip('near')">附近</li>
+        <li @click="skip('destination')">目的地</li>
+        <li @click="skip('hotel')">酒店</li>
+        <li @click="skip('food')">美食</li>
+        <li @click="skip('map')">地图</li>
       </ul>
     </nav>
     <div class="list">
@@ -47,7 +47,7 @@
       <p>1</p>
 
     </div>
-    <div class="footer">
+   <div class="footer">
          <ul>
            
             <li @click="skip('index')">
@@ -59,11 +59,11 @@
                <i class="yo-ico">&#xe608;</i>
                <span>发现</span>
             </li>
-            <li @click="skip('index')">
+            <li @click="skip('travel')">
                <i class="yo-ico">&#xe614;</i>
                <span>游记</span>
             </li>
-            <li @click="skip('index')">
+            <li @click="skip('mine')">
                <i class="yo-ico">&#xe604;</i>
                <span>我的</span>
             </li>
@@ -73,12 +73,14 @@
 </template>
 
 <script>
-// import router from './router'
+
 export default {
   name:'app-index',
+
   methods:{
     skip(name){
       this.$router.push({name})
+     
     }
   }
 }
