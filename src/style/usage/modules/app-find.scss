@@ -1,0 +1,141 @@
+.find-header{
+    height:0.5rem;
+    background: pink;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.18rem;
+}
+.find-nav{
+    height:1rem;
+    background:white;
+    ul{ 
+        width: 100%;
+        height:1rem;
+        @include flexbox();
+        @include  justify-content( space-around);
+        @include  align-items(center);
+        li{
+            width: 0.5rem;
+            height: 0.5rem;
+            text-align: center;
+            line-height:0.5rem;
+            @include border(1px,#666,solid,0.2rem);
+            
+        }
+    }
+}
+.find-destioation{
+   
+    @include flexbox();
+    @include  align-items(center);
+    @include  flex-direction(column);
+  
+    .find-top{
+        width:3rem;
+        height:0.5rem;
+        @include flexbox();
+        @include  align-items(center);
+        h1{
+            font-size: 0.2rem;
+        }
+        b{
+            width: 0.1rem;
+            height:0.1rem;
+            background: #ccc;
+            @include border(1px,#ccc,solid,0.5rem)
+        }
+    }
+    .find-con{
+        width: 3rem;
+        height:1rem;
+        background: pink;
+        @include flexbox();
+        @include  justify-content(space-between);
+       
+       
+        .find-con1{
+            width: 0.98rem;
+            height:1rem;
+            background: gold;
+        }
+        
+    }
+    .find-title{
+        width: 3rem;
+        height: 0.4rem;
+        background: greenyellow;
+        @include flexbox();
+        @include  justify-content(center);
+        @include  align-items(center);
+        span{
+            width: 0.5rem;
+            height: 0.2rem;
+            display: block;
+            background: #ccc;
+            text-align: center;
+            line-height: 0.2rem;
+            margin-left: 0.1rem;
+        }
+    }
+    .find-title1{
+        width: 3rem;
+        height: 0.4rem;
+        background: greenyellow;
+        @include flexbox();
+        @include  justify-content(space-between);
+        @include  align-items(center);
+        .find-left{
+             @include flexbox();
+             @include  justify-content(space-between);
+             @include  align-items(center);
+            span{
+                width: 0.5rem;
+                height: 0.2rem;
+                display: block;
+                background: #ccc;
+                text-align: center;
+                line-height: 0.2rem;
+                
+            }
+        }
+        
+    }
+    .find-hot{
+        width:3rem;
+        height:2rem;
+        background: goldenrod;
+        .hot-answers{
+            width:100%;
+            height:0.3rem;
+            line-height: 0.3rem;
+           
+        }
+        .hot-answers1{
+            width:100%;
+            height:0.2rem;
+            line-height: 0.2rem;
+           
+        }
+         .hot-answers2{
+            width:100%;
+            height:0.2rem;
+            line-height: 0.2rem;
+            h1 {
+               @include ellipsis();
+            }
+        }
+        .hot-answers3{
+            width:100%;
+            height:0.2rem;
+            line-height: 0.2rem;
+            background: gold;
+        }
+        .find-more{
+            width:100%;
+            height:0.2rem;
+            @include flexbox();
+            @include  justify-content(center);
+            @include  align-items(center);
+        }
+    }
+}
