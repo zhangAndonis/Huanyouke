@@ -13,11 +13,11 @@
                <i class="yo-ico">&#xe608;</i>
                <span>发现</span>
             </li>
-            <li @click="skip('index')">
+            <li @click="skip('travel')">
                <i class="yo-ico">&#xe614;</i>
                <span>游记</span>
             </li>
-            <li @click="skip('index')">
+            <li @click="skip('mine')">
                <i class="yo-ico">&#xe604;</i>
                <span>我的</span>
             </li>
@@ -28,7 +28,6 @@
 </template>
 
 <script>
-// import router from './router'
 export default {
   name:'app-footer',
   methods:{

@@ -22,63 +22,22 @@
         <li @click="skip('map')">地图</li>
       </ul>
     </nav>
-    <div class="list">
-  
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-
-    </div>
-   <div class="footer">
-         <ul>
-           
-            <li @click="skip('index')">
-               <i class="yo-ico">&#xe62b;</i>
-               <span>首页</span>
-              
-            </li>
-            <li @click="skip('find')">
-               <i class="yo-ico">&#xe608;</i>
-               <span>发现</span>
-            </li>
-            <li @click="skip('travel')">
-               <i class="yo-ico">&#xe614;</i>
-               <span>游记</span>
-            </li>
-            <li @click="skip('mine')">
-               <i class="yo-ico">&#xe604;</i>
-               <span>我的</span>
-            </li>
-         </ul>
-    </div>
+    <indexCon/>
+    <AppFooter/>
   </div>
 </template>
 
 <script>
-
+import indexCon from './content/indexCon'
+import AppFooter from './AppFooter.vue'
 export default {
   name:'app-index',
-
+  components:{
+    indexCon,AppFooter
+  },
   methods:{
     skip(name){
+      console.log(name,555)
       this.$router.push({name})
      
     }
