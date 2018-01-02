@@ -11,7 +11,7 @@
       </div>
     </header>
     <section >
-        <img src="http://gallery.youxiake.com/Public/Data/upload/201711/30/56551512010265.jpg"/>
+        
     </section>
     <nav>
       <ul>

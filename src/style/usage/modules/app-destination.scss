@@ -1,0 +1,95 @@
+.destination-header{
+    height:0.5rem;
+    background: #ccc;
+    @include flexbox();
+    @include justify-content(space-around);
+    @include align-items(center);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    span{
+        display: block;
+        width: 0.5rem;
+        height: 0.3rem;
+        background: white;
+        @include border(1px,white,solid,0.1rem);
+        line-height: 0.3rem;
+        text-align: center;
+        
+    }
+    .destination-search{
+        width: 2.2rem;
+        height: 0.3rem;
+        @include border(1px,#000,solid,0.1rem);
+        background: white;
+        @include flexbox();
+        @include justify-content(space-around);
+        @include align-items(center);
+        i{
+            width: 0.2rem;
+            height:0.3rem;
+            display: block;
+            text-align: center;
+            line-height: 0.35rem;
+            font-size: 0.16rem;
+        }
+        input{
+            border: none;
+            width: 1.9rem;
+            height: 0.3rem;
+            background: transparent;
+            @include border(1px,white,solid,0.1rem)
+        }
+    }
+}
+.now-con{
+   margin-top: 0.5rem;
+    height:1.5rem;
+    @include flexbox();
+    @include justify-content(center);
+    @include flex-direction(column);
+    @include align-items(center);
+    .now-con-top{
+        width: 3rem;;
+        height:0.5rem;
+        line-height: 0.5rem;
+    }
+    .now-img{
+        width: 3rem;
+        height:1rem;
+        @include justify-content(space-between);
+        @include flexbox();
+        @include align-items(center);
+        .now-img-con{
+            width: 0.9rem;
+            height:1rem;
+            background: gold;
+        }
+    }
+}
+.hot-con{
+    height:1.5rem;
+    @include flexbox();
+    @include justify-content(center);
+    @include flex-direction(column);
+    @include align-items(center);
+    .hot-con-top{
+        width: 3rem;;
+        height:0.5rem;
+        line-height: 0.5rem;
+    }
+    .hot-img{
+        width: 3rem;
+        height:1rem;
+        @include flexbox();
+        @include justify-content(space-between);
+        @include flex-wrap(wrap);
+        @include align-items(center);
+        .hot-img-con{
+            width: 0.9rem;
+            height:1rem;
+            background: gold;
+            margin-top: 0.15rem;
+        }
+    }
+}

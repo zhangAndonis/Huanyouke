@@ -1,0 +1,38 @@
+.travel-body{
+    
+   .travel-header{
+    height:0.5rem;
+    width: 100%;
+    @include border(1px,#ccc,solid);
+    line-height: 0.5rem;
+    text-align: center;
+    }
+    .travel-banner{
+        height: 1.5rem;
+        margin-top: 0.1rem;
+        @include flexbox();
+        @include  justify-content(center);
+        @include  align-items(center);
+        .banner-con{
+            width: 3rem;
+            height: 1.5rem;
+            background: pink;
+            @include border(1px,#ccc,solid,0.1rem);
+        }
+    } 
+    .travel-content{
+        margin-top: 0.1rem;
+        @include flexbox();
+        @include  justify-content(center);
+        @include  align-items(center);
+        @include flex-direction(column);
+        .content-list{
+            width: 3rem;
+            height: 1.5rem;
+            background: pink;
+            @include border(1px,#ccc,solid,0.1rem);
+            margin-top: 0.1rem;
+        }
+    }
+}
+

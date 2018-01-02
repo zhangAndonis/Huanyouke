@@ -136,6 +136,15 @@
             @include flexbox();
             @include  justify-content(center);
             @include  align-items(center);
+            span{
+                width: 0.5rem;
+                height: 0.2rem;
+                display: block;
+                background: #ccc;
+                text-align: center;
+                line-height: 0.2rem;
+                
+            }
         }
     }
 }

@@ -1,6 +1,9 @@
   <template lang="html">
   <div class="app-map body ">
-   地图
+   <div class="map-header">
+   	<span>取消</span>
+   	<span>搜索</span>
+   </div>
   </div>
 </template>
 
