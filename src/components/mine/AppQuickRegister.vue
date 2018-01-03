@@ -4,7 +4,7 @@
       
     </div>
     <div class="u62-c">
-        <div class="back2">返回</div>   
+        <div class="back2" @click="skip('AppLoginRegister')">返回</div>   
         <h1>手机快速注册</h1> 
     </div>
     <div class="main22-c">
@@ -21,7 +21,12 @@
 
 <script>
 export default {
-  name:'app-quick-register'
+  name:'app-quick-register',
+  methods:{
+    skip(name){
+      this.$router.push({name})
+    }
+  }
 }
 </script>
 

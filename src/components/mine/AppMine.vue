@@ -6,8 +6,8 @@
       	 <h1>个人中心</h1>
       </div>
       <div class="mine-login">
-      	<span></span>
-      	<p><b>登录</b>/<b>注册</b></p>
+      	<span @click="skip('AppLoginRegister')"></span>
+      	<p><b @click="skip('AppLoginRegister')">登录</b>/<b @click="skip('AppLoginRegister')">注册</b></p>
       </div>
       <div class="mine-nav">
       	<ul>
@@ -34,6 +34,11 @@ export default {
   name:'app-mine',
   components:{
     AppFooter
+  },
+  methods:{
+    skip(name){
+      this.$router.push({name})
+    }
   }
 }
 </script>

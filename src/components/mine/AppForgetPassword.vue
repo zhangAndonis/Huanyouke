@@ -4,7 +4,7 @@
       
     </div>
     <div class="u63-c">
-        <div class="back3">返回</div>   
+        <div class="back3" @click="skip('AppLoginRegister')">返回</div>   
         <h1>找回密码</h1> 
     </div>
     <form>
@@ -20,7 +20,12 @@
 
 <script>
 export default {
-  name:'app-forget-password'
+  name:'app-forget-password',
+  methods:{
+    skip(name){
+      this.$router.push({name})
+    }
+  }
 }
 </script>
 

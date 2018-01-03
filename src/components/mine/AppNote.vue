@@ -4,12 +4,12 @@
       
     </div>
     <div class="u61-c">
-        <div class="back1">返回</div>   
+        <div class="back1" @click="skip('AppLoginRegister')">返回</div>   
         <h1>环游客欢迎您</h1> 
     </div>
     <div class="main1-c">
         <div class="message1-c">
-            <p>账号登录</p>
+            <p @click="skip()">账号登录</p>
             <p>短信验证码登录</p>
         </div>
         <form>
@@ -23,7 +23,12 @@
 
 <script>
 export default {
-  name:'app-note'
+  name:'app-note',
+  methods:{
+    skip(name){
+      this.$router.push({name})
+    }
+  }
 }
 </script>
 
