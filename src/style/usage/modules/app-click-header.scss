@@ -1,0 +1,83 @@
+.u4-c{
+    height:.2rem;
+    background:#ccc;
+    @include border(1px,#000,solid);
+}
+.person-c{
+    @include flexbox();
+    @include justify-content(space-around);
+    @include align-items(center);
+    @include border(1px,#000,solid);
+    height:.44rem;
+    .img-c{
+        @include border(1px,#ccc,solid,.05rem);
+        padding:.08rem;
+    }
+    span{
+        font-weight: bolder;
+        font-size: .14rem;
+    }
+    .save-c{
+        font-size: .14rem;
+        color:skyblue;
+    }
+}
+.imgbox-c{
+    .imgperson-c{
+        background: skyblue;
+        height:2rem;
+        width:90%;
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(center);
+        @include align-items(center);
+    }
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    @include border(1px,#000,solid);
+    height:2.3rem;
+    .headclick-c{
+        width:.75rem;
+        height:.75rem;
+       @include border(1px,#000,solid,.75rem); 
+       text-align: center;
+       line-height: .75rem;
+       background: #ccc;
+    }
+    .background-c{
+        width:1rem;
+        height:.34rem;
+       @include border(1px,#fff,solid); 
+       text-align: center;
+       line-height: .34rem;
+    }
+}
+.mainmessage-c{
+    p{
+        height:.44rem;
+        border-bottom:1px solid #ccc;
+        padding:.1rem;
+        span{
+            height:.44rem;
+            line-height:.4rem;
+            display:inline-block;
+            &:nth-child(1){
+                color:#bbb;
+            }
+            &:nth-child(2){
+                margin-left:.4rem;
+            }
+        }
+        &:nth-child(3){
+            span:nth-child(2){
+                margin-left:.25rem;
+            }
+        }
+        &:nth-child(4){
+            span:nth-child(2){
+                color:#bbb;
+            }
+        }
+    }
+}
