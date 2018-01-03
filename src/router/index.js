@@ -11,6 +11,10 @@ import AppFood from '../components/main/AppFood.vue'
 import AppMap from '../components/main/AppMap.vue'
 import AppTravel from '../components/travel/AppTravel.vue'
 import AppMine from '../components/mine/AppMine.vue'
+import AppLoginRegister from '../components/mine/AppLoginRegister.vue'
+import AppNode from '../components/mine/AppNote.vue'
+import AppQuickRegister from '../components/mine/AppQuickRegister.vue'
+import AppForgetPassword from '../components/mine/AppForgetPassword.vue'
 const routes = [
   
   {path:'',redirect:'/index'},
@@ -18,6 +22,10 @@ const routes = [
   {path:'/find',name:'find',component:AppFind},
   {path:'/travel',name:'travel',component:AppTravel},
   {path:'/mine',name:'mine',component:AppMine},
+  {path:'/mine/AppLoginRegister',name:'AppLoginRegister',component:AppLoginRegister},
+  {path:'/mine/AppNode',name:'AppNode',component:AppNode},
+  {path:'/mine/AppQuickRegister',name:'AppQuickRegister',component:AppQuickRegister},
+  {path:'/mine/AppForgetPassword',name:'AppForgetPassword',component:AppForgetPassword},
   {path:'/near',name:'near',component:AppNearby},
   {path:'/destination',name:'destination',component:AppDestination},
   {path:'/hotel',name:'hotel',component:AppHotel},
