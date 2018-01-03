@@ -1,0 +1,53 @@
+.u46-c{
+    height:.2rem;
+    background: #ccc;
+    @include border(1px,#000,solid);
+}
+.person6-c{
+    height:.44rem;
+    @include flexbox();
+    @include align-items(center);
+    @include border(1px,#000,solid);
+    .back66-c{
+        @include border(1px,#000,solid,.05rem);
+        padding:.04rem;
+        margin:0 .1rem;
+    }
+}
+.mainus-c{
+    height:2.3rem;
+    background: #ccc;
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    .logo-c{
+        width:.75rem;
+        height:.8rem;
+        background: #fff;
+        @include border(1px,#000,solid);
+        text-align: center;
+        line-height:.8rem;
+        margin-bottom:.2rem;
+    }
+    p{
+        width:100vw;
+        height:.44rem;
+        line-height: .44rem;
+        padding:0 .1rem;
+        &:nth-child(1){
+            margin-top:.2rem;
+            border-top:1px solid #000;
+        }
+        &:nth-child(2){
+            @include flexbox();  
+            @include justify-content(space-between);
+            border-bottom:1px solid #000;
+            border-top:1px solid #000;
+            span:nth-child(2){
+                display:inline-block;
+                margin-left:.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.app-about-app{
+    @include border(1px,#000,solid);
+}
+.u45-c{
+    height:.2rem;
+    background: #ccc;
+    @include border(1px,#000,solid);
+}
+.person5-c{
+    height:.44rem;
+    @include flexbox();
+    @include align-items(center);
+    @include border(1px,#000,solid);
+    .back55-c{
+        @include border(1px,#000,solid,.05rem);
+        padding:.04rem;
+        margin:0 .1rem;
+    }
+}
+.praise{
+    height:2.6rem;
+    background: #ccc;
+    margin-bottom:.1rem;
+    @include border(1px,#000,solid);
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    .praiseT-c{
+        width:1rem;
+        height:.8rem;
+        background:#fff;
+        @include border(1px,#000,solid);
+        text-align: center;
+        line-height: .8rem;
+        font-size:.16rem;
+    }
+    .praiseB-c{
+        margin-top:.1rem;
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(center);
+        p{
+            font-size:.16rem;
+            &:nth-child(1){
+                color:skyblue;
+                font-weight:bolder;
+            }
+        }
+    }
+}
+.flexB-c{
+    background: #fff;
+    height:1rem;
+}

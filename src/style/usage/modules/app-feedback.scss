@@ -1,0 +1,36 @@
+.app-feedback{
+    
+    .u47-c{
+        height:.2rem;
+        background: #ccc;
+        @include border(1px,#000,solid);
+    }
+    .person7-c{
+        height:.44rem;
+        @include flexbox();
+        @include align-items(center);
+        @include border(1px,#000,solid);
+        .back77-c{
+            @include border(1px,#000,solid,.05rem);
+            padding:.04rem;
+            margin:0 .1rem;
+        }
+    }
+    .advice-c{
+        margin:.2rem;
+        form{
+            textarea{
+                display:block;
+                margin: .18rem;
+                margin-top:.2rem;
+                margin-left:.01rem;
+            }
+        }
+        p{
+            input{
+                display:block;
+                @include border(1px,#000,solid)
+            }
+        }
+    }
+}

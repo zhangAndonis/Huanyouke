@@ -1,0 +1,65 @@
+.u42-c{
+    height:.2rem;
+    background:#ccc;
+    @include border(1px,#000,solid);
+}
+.person2-c{
+    height:.44rem;
+    @include flexbox();
+    @include align-items(center);
+    @include border(1px,#000,solid);
+    .back5-c{
+        @include border(1px,#000,solid,.05rem);
+        padding:.04rem;
+        margin:0 .1rem;
+    }
+}
+.mainmessage2-c{
+    margin:.4rem 0 0 .2rem;
+    border-bottom:1px solid #000;
+    padding-bottom:.2rem;
+    margin-right:.2rem;
+    .travels2-c{
+        @include flexbox();
+        @include align-items(center);
+        .imgperson2-c{
+            width:.7rem;
+            height:.7rem;
+            @include border(1px,#ccc,solid,.7rem);
+            background:#ccc;
+        }
+    }
+    .imgbox2-c{
+        margin-top:.2rem;
+        width:2.8rem;
+        height:2rem;
+        background: #ccc;
+    }
+    .titleskim-c{
+        margin-top:.1rem;
+        @include flexbox();
+        @include justify-content(space-between);
+        margin-right:.2rem;
+        .titleskimR-c{
+           margin-top:.2rem;
+        }
+    }
+}
+.newtravel{
+    width:1.75rem;
+    height:.4rem;
+    background:orange;
+    @include border(1px,#000,solid,.2rem);
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    margin-top:.4rem;
+    margin-left:.6rem;
+    p{
+        background: #fff;
+        width:1.5rem;
+        height:.25rem;
+        line-height: .25rem;
+        text-align: center;
+    }
+}
