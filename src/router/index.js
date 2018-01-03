@@ -15,6 +15,7 @@ import AppLoginRegister from '../components/mine/AppLoginRegister.vue'
 import AppNode from '../components/mine/AppNote.vue'
 import AppQuickRegister from '../components/mine/AppQuickRegister.vue'
 import AppForgetPassword from '../components/mine/AppForgetPassword.vue'
+<<<<<<< HEAD
 import AppClickHeader from '../components/mine/AppClickHeader.vue'
 import AppMyCollection from '../components/mine/AppMyCollection.vue'
 import AppMyTravels from '../components/mine/AppMyTravels.vue'
@@ -23,6 +24,8 @@ import AppMyQuestionAnswer from '../components/mine/AppMyQuestionAnswer'
 import AppAboutApp from '../components/mine/AppAboutApp'
 import AppAboutUs from '../components/mine/AppAboutUs'
 import AppFeedback from '../components/mine/AppFeedback'
+=======
+>>>>>>> master
 const routes = [
   
   {path:'',redirect:'/index'},
@@ -34,6 +37,7 @@ const routes = [
   {path:'/mine/AppNode',name:'AppNode',component:AppNode},
   {path:'/mine/AppQuickRegister',name:'AppQuickRegister',component:AppQuickRegister},
   {path:'/mine/AppForgetPassword',name:'AppForgetPassword',component:AppForgetPassword},
+<<<<<<< HEAD
   {path:'/mine/AppClickHeader',name:'AppClickHeader',component:AppClickHeader},
   {path:'/mine/AppMyCollection',name:'AppMyCollection',component:AppMyCollection},
   {path:'/mine/AppMyTravels',name:'AppMyTravels',component:AppMyTravels},
@@ -42,6 +46,8 @@ const routes = [
   {path:'/mine/AppAboutApp',name:'AppAboutApp',component:AppAboutApp},
   {path:'/mine/AppAboutUs',name:'AppAboutUs',component:AppAboutUs},
   {path:'/mine/AppFeedback',name:'AppFeedback',component:AppFeedback},
+=======
+>>>>>>> master
   {path:'/near',name:'near',component:AppNearby},
   {path:'/destination',name:'destination',component:AppDestination},
   {path:'/hotel',name:'hotel',component:AppHotel},
