@@ -1,9 +1,13 @@
 <template lang="html">
   
   <div class="app-travel travel-body">
-      <app-footer ></app-footer>  
+   
       <div class="travel-header">
-      	  <h1>游记</h1>
+      	<div class="travel_top">
+      		<h1>游记</h1>
+      	  <i class="yo-ico">&#xf067</i>
+      	</div>
+      	  
       </div>
       <AppTravelBanner/>
       <AppTravelcontent/>
@@ -11,15 +15,21 @@
 </template>
 
 <script>
-import AppFooter from '../main/AppFooter.vue'
+import axios from 'axios'
 import AppTravelBanner from './travel-banner.vue'
 import AppTravelcontent from './travel-content.vue'
 export default {
   name:'app-travel',
   components:{
-    AppFooter,AppTravelBanner,AppTravelcontent
+  AppTravelBanner,AppTravelcontent
+  },
+  data(){
+  	return{
+  		billboards:[],
+  		scroll:''
+  	}
   }
-}
+  }
 </script>
 
 <style lang="scss">

@@ -1,7 +1,7 @@
 <template lang="html">
   
   <div class="app-mine ">
-      <app-footer ></app-footer>  
+       
       <div class="mine-header">
       	 <h1>个人中心</h1>
       </div>
@@ -29,11 +29,11 @@
 </template>
 
 <script>
-import AppFooter from '../main/AppFooter.vue'
+
 export default {
   name:'app-mine',
   components:{
-    AppFooter
+   
   },
   methods:{
     skip(name){
