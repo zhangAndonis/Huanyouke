@@ -1,4 +1,7 @@
 .map-header{
     height: 0.5rem;
-    @include border(1px,#ccc,solid)
+    @include border(1px,#ccc,solid);
+    span{
+        
+    }
 }

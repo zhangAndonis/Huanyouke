@@ -36,6 +36,7 @@ const routes = [
   {path:'/find',name:'find',component:AppFind},
   {path:'/travel',name:'travel',component:AppTravel},
   {path:'/mine',name:'mine',component:AppMine},
+<<<<<<< HEAD
   {path:'/mine/AppLoginRegister',name:'AppLoginRegister',component:AppLoginRegister},
   {path:'/mine/AppNode',name:'AppNode',component:AppNode},
   {path:'/mine/AppQuickRegister',name:'AppQuickRegister',component:AppQuickRegister},
@@ -54,6 +55,12 @@ const routes = [
 =======
 >>>>>>> master
 >>>>>>> llc
+=======
+  {path:'/AppLoginRegister',name:'AppLoginRegister',component:AppLoginRegister},
+  {path:'/AppNode',name:'AppNode',component:AppNode},
+  {path:'/AppQuickRegister',name:'AppQuickRegister',component:AppQuickRegister},
+  {path:'/AppForgetPassword',name:'AppForgetPassword',component:AppForgetPassword},
+>>>>>>> zhangAndonis
   {path:'/near',name:'near',component:AppNearby},
   {path:'/destination',name:'destination',component:AppDestination},
   {path:'/hotel',name:'hotel',component:AppHotel},
