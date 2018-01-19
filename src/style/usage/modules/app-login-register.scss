@@ -39,37 +39,24 @@ body{
             }
         }
         form{
-<<<<<<< HEAD
+
             padding:.04rem;
-=======
-<<<<<<< HEAD
-            padding:.05rem;
-=======
-            padding:.04rem;
->>>>>>> master
->>>>>>> llc
+
+
             p{
                 height:.44rem;
                 @include flexbox();
                 @include align-items(center);
                 border-bottom:1px solid #ccc;
-<<<<<<< HEAD
+
                 font-size:.12rem;
-=======
-<<<<<<< HEAD
-                font-size:.14rem;
-=======
-                font-size:.12rem;
-<<<<<<< HEAD
->>>>>>> master
->>>>>>> llc
-=======
+
                  background:white ;
                  .sp1{
                      color: red;
                      font-size: 0.2rem;
                  }
->>>>>>> zhangAndonis
+
                 input{
                     margin-left:.1rem;
                     width:2.5rem;
@@ -83,15 +70,10 @@ body{
                     height:.38rem;
                     font-size:.1rem;
                     margin-left:.5rem;
-<<<<<<< HEAD
+
                     margin-top:-.01rem;
-=======
-<<<<<<< HEAD
-=======
-                    margin-top:-.01rem;
->>>>>>> master
->>>>>>> llc
-                    background:#fff;
+
+        background:#fff;
                     border:0;
                     border:1px solid #ccc;
                 }
