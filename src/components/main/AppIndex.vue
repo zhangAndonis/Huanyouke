@@ -2,7 +2,7 @@
   <div class="app-index body">
    <header class="">
       
-      <div class="search">
+      <div class="search" @click="skip('search')">
         <i class="yo-ico">&#xf067</i>
         <input type="text" placeholder="搜索你感兴趣的东西" />
       </div>
@@ -49,7 +49,11 @@
       </ul>
     </nav>
     <indexCon/>
-   
+    <div class="top" v-if="isShow" @click="top()">
+      <span></span>
+      <i class="yo-ico">&#xe608;</i>
+    </div>
+    
   </div>
 </template>
 
@@ -66,28 +70,21 @@ export default {
   data(){
   	return{
   		billboards:[],
-  		scroll:''
+  		scroll:'',
+  		isShow:false,
+  		isHiddens:true,
+  		
   	}
   },
   methods:{
     skip(name){
-      console.log(name,555)
-      this.$router.push({name})
-     
+			this.$router.push({name})
     },
     getData(){
-    	
             let that = this  
-             
-            	
-            
             axios.get('/api/banner/list').then((response)=>{
-            	console.log(response)
-               
-                 
-                 
                  that.billboards = response.data.data.subjects
-                 Indicator.close();
+                console.log(response)
             })	
            
             
@@ -95,15 +92,37 @@ export default {
         scrollfunc(){
 
           var scroll = document.documentElement.scrollTop || document.body.scrollTop;  
-        
-//       console.log(scroll);
+          this.scroll = scroll
+         
+          
+          if(scroll >=200){
+          	this.isShow = true
+          	
+          }else{
+          	
+          	this.isShow = false
+          }
+         
+},top(){
+	document.documentElement.scrollTop = document.body.scrollTop=0
+},
+loading(){
+	 this.timer = setTimeout(function(){
+           document.getElementsByClassName('loading')[0].style.display = 'none'
+          
+       },3000)
+	 
 }
 
     },
     created(){
         this.getData()
+       
+         
     },
-    mounted(){window.addEventListener('scroll',this.scrollfunc,true)
+    mounted(){
+    	window.addEventListener('scroll',this.scrollfunc,true)
+
     },
     updated () {
         new Swiper('.swiper-container',{
@@ -111,6 +130,8 @@ export default {
             autoplay:true,
             pagination:{el:'.swiper-pagination'}
         })
+        
+       
     }
    
 }

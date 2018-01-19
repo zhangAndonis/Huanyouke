@@ -9,7 +9,17 @@
         {
           "id": 1,
           "name": "贝加尔湖",
-          "imgUrl": "../../src/assets/banner.png"
+          "imgUrl": "../../src/assets/640x360.jpg"
+        },
+        {
+          "id": 2,
+          "name": "贝加尔湖",
+          "imgUrl": "../../src/assets/15155804064719.jpg"
+        },
+        {
+          "id": 3,
+          "name": "贝加尔湖",
+          "imgUrl": "../../src/assets/640x360 (1).jpg"
         }
       ]
     }

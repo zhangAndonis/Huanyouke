@@ -47,49 +47,8 @@
           "name": "巴厘岛",
           "imgUrl": "../../src/assets/rym/rym6.png"
           
-        },
-        {
-          "id": 7,
-          "title":"穿街走巷看东京，感受市井人情",
-          "name": "东京",
-          "imgUrl": "../../src/assets/rym/rym1.png"
-          
-        },
-        {
-          "id": 8,
-          "title":"细细品味老北京的南城旧事",
-          "name": "京城",
-          "imgUrl": "../../src/assets/rym/rym2.png"
-          
-        },
-        {
-          "id": 9,
-          "title":"感受美食与时尚为一体的古老街区",
-          "name": "巴黎",
-          "imgUrl": "../../src/assets/rym/rym3.png"
-          
-        },
-        {
-          "id": 10,
-          "title":"出来足球和高迪，巴塞罗那还有生活",
-          "name": "巴塞罗那",
-          "imgUrl": "../../src/assets/rym/rym4.png"
-          
-        },
-        {
-          "id": 11,
-          "title":"忘不掉越南，因为它是一座怀旧之城",
-          "name": "越南",
-          "imgUrl": "../../src/assets/rym/rym5.png"
-          
-        },
-        {
-          "id": 12,
-          "title":"一个慢生活的美丽国度",
-          "name": "巴厘岛",
-          "imgUrl": "../../src/assets/rym/rym6.png"
-          
         }
+        
       ]
     }
 }

@@ -1,0 +1,94 @@
+.everyonenext-header{
+    width: 100%;
+    height:0.44rem;
+    @include flexbox();
+    @include  justify-content(center);
+    @include  align-items(center);
+    border-bottom: 1px solid #ccc;
+    .header-con{
+        width: 3rem;
+        height: 0.44rem;
+        @include flexbox();
+        @include  justify-content(space-between);
+        @include  align-items(center);
+    }
+}
+.ztravel-title{
+    width: 100%;
+    height:0.5rem;
+    
+    @include flexbox();
+    @include  justify-content(center);
+    @include  align-items(center);
+    .travel-search{
+        width: 3rem;
+        height:0.5rem;
+        
+        @include flex-direction(column);
+        border-bottom: 1px solid #ccc;
+        h3{
+             width: 3rem;
+            height: 0.5rem;
+            line-height: 0.5rem;
+        }
+        
+    }
+}
+.ztravel-msg{
+    width: 100%;
+    height:1.06rem;
+    @include flexbox();
+    @include  justify-content(center);
+    @include  align-items(center);
+    .msg-con{
+        width: 3rem;
+        height: 1.06rem;
+        @include flexbox();
+        @include  justify-content(space-between);
+        @include  align-items(center);
+        .msg-title{
+            width: 2.1rem;
+            height: 1.06rem;
+           
+            span{
+                font-size: 0.08rem;
+                color: #d4d3d3;
+            }
+            textarea{
+                width: 2.1rem;
+                height: 0.8rem;
+                resize: none;
+                border: none;
+            }
+        }
+        .msg-img{
+            width: 0.9rem;
+            height:0.95rem;
+            
+            img{
+                 width: 0.9rem;
+            height:0.95rem; 
+            }
+        }
+        
+    }
+}
+.commit{
+    width: 100%;
+    height:0.3rem;
+    
+    @include flexbox();
+    @include  justify-content(center);
+    @include  align-items(center);
+    .commit-con{
+        width: 3rem;
+        height: 0.3rem;
+       
+        @include flexbox();
+        @include  justify-content(space-between);
+        @include  align-items(center);
+        span{
+            font-size:0.10rem;
+        }
+    }
+}

@@ -2,7 +2,12 @@
   "/api/banner/list": "/list",
   "/api/rym/list":"rymlist",
   "/api/a/list":"alist",
-  "/api/youji/list":"youjilist"
+  "/api/youji/list":"youjilist",
+  "/api/search/list":"searchlist",
+  "/api/destination/list":"destinationlist",
+  "/api/near/list":"nearlist",
+  "/api/more/list":"morelist",
+  "/api/detail/list":"detaillist"
   
 }
 

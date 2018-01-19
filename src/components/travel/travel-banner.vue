@@ -42,11 +42,7 @@ export default {
              
             	
             
-            axios.get('/api/youjilist/youjilist').then((response)=>{
-            	console.log(response,777)
-               
-                 
-                 
+            axios.get('/api/youji/youjilist').then((response)=>{
                  that.billboards = response.data.data.subjects
                  
             })	

@@ -1,0 +1,110 @@
+.app-search-child-header{
+    
+    height:0.44rem;
+    background: #ffc505;
+
+    @include flexbox();
+    @include  justify-content(center);
+    @include  align-items(center);
+    position: absolute;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    span{
+        display: block;
+        width: 0.6rem;
+        height: 0.44rem;
+        text-align: center;
+        line-height: 0.44rem;
+        color: white;
+        font-size: 0.2rem;
+        i{
+            margin-left: -0.5rem;
+        }
+    }
+    .search{
+        width: 2rem;
+        height: 0.21rem;
+        @include border(1px ,white,solid,0.08rem);
+        @include flexbox();
+        @include  justify-content(center);
+        @include  align-items(center);
+        background: white;
+        
+        
+        i{
+            width: 0.2rem;
+            height:0.21rem;
+            display: block;
+            text-align: center;
+            line-height: 0.3rem;
+            font-size: 0.16rem;
+        }
+        input{
+            height:0.21rem;
+            width: 1.5rem;
+            border: none;
+            background: transparent;
+        }
+    }
+   
+
+}
+.search-con{
+    margin-top: 0.44rem;
+}
+.clearfix{
+   
+     @include flexbox();
+    @include  justify-content(center);
+    @include  align-items(center);
+    
+}
+.cd-c{
+    padding:0.1rem;
+}
+.cd-l-c img{
+    width:1rem;height:1rem;
+    margin-top:0.04rem;
+}
+.cd-l-c{
+    float:left;
+}
+.cd-r-c{
+    float:left;
+    width:2rem;
+    margin-left:0.1rem;
+    height: 1rem;
+    font-size: 0.12rem;
+}
+.cd-r-c p:nth-child(1) span{
+    margin-right:0.1rem;
+}
+.cd-r-c p:nth-child(1){
+    margin-bottom:0.06rem;
+}
+.cd-r-c p:nth-child(1) span:nth-child(1){
+    color:greenyellow;
+}
+.cd-r-c .xxx p:nth-child(1){
+    float:left;
+}
+.cd-r-c p:nth-child(2){
+    margin-bottom:0.06rem;
+}
+.cd-r-c .xxx{
+    color:#ccc;
+    @include flexbox();
+    @include  justify-content(space-between);
+    @include  align-items(center);
+}
+.cd-r-c .xxx p:nth-child(2){
+    float:right;
+   
+}
+.cd-r-c .xxx p:nth-child(1) span{
+    color:#ccc;
+}
+.cd-r-c .xxx p:nth-child(2) span{
+    color:red;
+}

@@ -1,0 +1,135 @@
+.app-detail{
+    @include flexbox();
+    @include  justify-content(center);
+    @include  align-items(center);
+    flex-direction: column;
+    .detail_img{
+        width: 100%;
+        height:1.5rem;
+        position: relative;
+        top: 0;
+        img{
+            width: 3.75rem;
+            height:1.5rem;
+            
+        }
+        i{
+            position: absolute;
+            top:0.1rem;
+            left:0.1rem;
+            font-size: 0.18rem;
+            color: white;
+        }
+    }
+    .detail_tile{
+        width: 3rem;
+        height:1rem;
+        .tetail_wx{
+            width: 100%;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            .sp1{
+                display: inline-block;
+                width: 0.6rem;
+                height: 0.2rem;
+                background: #FFD034;
+                line-height: 0.2rem;
+                text-align: center;
+                color: white;
+                font-size: 0.12rem;
+                border-radius: 0.2rem;
+            }
+            .sp2{
+                color: #ffd034;
+            }
+        }
+        .tetail_type{
+            width: 100%;
+            height: 0.3rem;
+            line-height: 0.6rem;
+            span{
+                display: block;
+                width: 0.7rem;
+                height:0.2rem;
+                line-height: 0.2rem;
+                background: #51ddd0;
+                text-align: center;
+                border-radius: 0.2rem;
+                font-size: 0.12rem;
+                color: white;
+            }
+        }
+    }
+    .detail_message{
+        width: 3rem;
+        height: 1rem;
+        p{
+            @include ellipsis(null,4);
+        }
+    }
+    .detail_msg{
+         width: 3rem;
+         height: 1.3rem;
+        
+    }
+    .detail_food{
+         width: 3rem;
+         height: 1.15rem;
+        
+            .dp{
+             @include flexbox();
+             @include  justify-content(space-between);
+             @include  align-items(center);
+             p{
+                        
+              }
+             span {
+                 display: block;
+                 font-size: 0.12rem;
+                 width: 0.5rem;
+                 height: 0.2rem;
+                 background: #FFD034;
+                 border-radius: 0.2rem;
+                 line-height: 0.2rem;
+                 text-align: center;
+                 color: white;
+             }
+          }
+          .tx{
+              width: 100%;
+              height: 0.4rem;
+              margin-top: 0.1rem;
+              margin-bottom: 0.1rem;
+               @include flexbox();
+            
+             @include  align-items(center);
+              .img{
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  border-radius: 0.5rem;
+                 
+                  img{
+                    height: 0.4rem;
+                    width: 0.4rem;   
+                  }
+              }
+              .xx{
+                  font-size: 0.12rem;
+                  margin-left: 0.1rem;
+                  p{
+                      color: #fb91bb;
+                      span{
+                          color: #FFC505;
+                      }
+                  }
+              }
+          }
+          .ps{
+              p{
+                  @include ellipsis(null,2);
+              }
+          }
+         
+    }
+    
+}

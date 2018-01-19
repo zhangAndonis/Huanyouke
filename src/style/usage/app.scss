@@ -1,5 +1,9 @@
 @import './core/reset.scss';
 @import './modules/common.scss';
+@import './modules/app-detail.scss';
+@import './modules/app-writer-travel.scss';
+@import './modules/app-everyonenext.scss';
+@import './modules/app-search.scss';
 @import './modules/app-travel.scss';
 @import './modules/app-mine.scss';
 @import './modules/app-hotel.scss';
@@ -13,6 +17,7 @@
 @import './modules/app-login-register.scss';
 @import './modules/app-note.scss';
 @import './modules/app-quick-register.scss';
+@import './modules/app-search-child.scss';
 @import './modules/app-forget-password.scss';
 @import '../../style/lib/ani/elastic-in-left.scss';
 @import '../../style/lib/ani/elastic-in-right.scss';
