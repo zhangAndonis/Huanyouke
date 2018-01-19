@@ -11,11 +11,11 @@
            	<img src="../../assets/find/find1.png" alt="" />
            	<span>查攻略</span>
            	</li>
-             <li>
+             <li  @click="skip('writetravel')">
            	<img src="../../assets/find/find2.png" alt="" />
            	<span>写游记</span>
            	</li>
-           	 <li>
+           	 <li @click="skip('everyone')">
            	<img src="../../assets/find/find3.png" alt="" />
            	<span>问大家</span>
            	</li>
@@ -79,8 +79,25 @@
                   <span>8920浏览</span>
                   <b>5回答</b>
               </div>
+              
+              <div class="z-more" v-if="isShow" v-for="more in question" :key="more.id">
+              	<div class="head_portrait">
+              <img src="../../assets/search/tou1.jpg"/><span style="margin-left: 0.05rem;">{{more.touxiang}}</span>
+              </div>
+               <div class="hot-answers1">
+                <h1>问：{{more.wen}}</h1>
+              </div>
+              <div class="hot-answers2">
+                <span>{{more.huida}}</span>
+              </div>
+              <div class="hot-answers3">
+                  <span>{{more.liulan}}浏览</span>
+                  <b>{{more.hui}}回答</b>
+              </div>
+             
+              </div>
               <div class="find-more">
-                <h1>查看更多</h1>
+                <h1 @click="more" id="more">查看更多</h1>
                 <span><i class="yo-ico">&#xe502;</i></span>
               </div>
           </div>
@@ -93,12 +110,42 @@
 import AppFooter from '../main/AppFooter.vue'
 export default {
   name:'app-find',
+  data(){
+  	return{
+  		isShow:false,
+  		question:[
+  		{id:1,touxiang:'安其拉',wen:'哪个地方的海水清澈干净?',huida:'青岛的海挺好的',liulan:'7654',hui:'8'},
+  		{id:2,touxiang:'鲁班七号',wen:'去北京的地铁挤吗?',huida:'恩，会很挤的',liulan:'9783',hui:'4'},
+  		{id:3,touxiang:'干将莫邪',wen:'上海哪好玩?',huida:'都好玩',liulan:'4531',hui:'6'},
+  		{id:4,touxiang:'宫本武藏',wen:'你知道去哪度蜜月最合适?',huida:'你好，建议你去马尔代夫',liulan:'4567',hui:'15'},
+  		{id:5,touxiang:'娜可露露',wen:'冬天去哪滑雪?',huida:'你好，东北适合滑雪，不过要多加小心',liulan:'999',hui:'56'}
+  		]
+  	}
+  },
   components:{
     AppFooter
+  },methods:{
+    skip(name){
+     
+      this.$router.push({name})
+     
+    },
+    more(){
+    	this.isShow = !this.isShow
+    	if(this.isShow == true){
+    		document.getElementById('more').innerHTML = '隐藏'
+    	
+    	}if(this.isShow ==false){
+    		document.getElementById('more').innerHTML = '查看更多'
+    	}
+    	
+    }
   }
 }
 </script>
 
 <style lang="scss">
-
+.z-more{
+	margin-top: 0.1rem;
+}
 </style>

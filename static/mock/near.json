@@ -1,0 +1,106 @@
+{
+    "errcode": 0,
+    "errmsg": "",
+    "data": {
+      "start": 0,
+      "count": 10,
+      "total": 120,
+      "subjects1": [
+        {
+          "id": 1,
+          "distance":"10公里",
+          "name": "一兰拉面",
+          "imgUrl": "../../src/assets/near/near2.png",
+          "start": "../../src/assets/near/start.png",
+          "detailpath":"../../src/assets/detail/laimian.png"
+          
+        },
+        {
+          "id": 2,
+           "distance":"12公里",
+          "name": "赤贝寿司店",
+          "imgUrl": "../../src/assets/near/near3.png",
+          "start": "../../src/assets/near/start.png",
+           "detailpath":"../../src/assets/detail/shousi.jpg"
+        },
+        {
+          "id": 3,
+           "distance":"11公里",
+          "name": "唯客哆西餐厅",
+          "imgUrl": "../../src/assets/near/near4.png",
+          "start": "../../src/assets/near/start.png",
+           "detailpath":"../../src/assets/detail/niupai.png"
+        },
+        {
+          "id": 4,
+           "distance":"43公里",
+          "name": "悠享下午茶",
+          "imgUrl": "../../src/assets/near/near5.png",
+          "start": "../../src/assets/near/start.png",
+           "detailpath":"../../src/assets/detail/haha.jpg"
+        },
+        {
+          "id": 5,
+           "distance":"48公里",
+          "name": "乐悦坊",
+          "imgUrl": "../../src/assets/near/near6.png",
+          "start": "../../src/assets/near/start.png",
+           "detailpath":"../../src/assets/detail/mocha.jpg"
+        },
+        {
+          "id": 6,
+           "distance":"17公里",
+          "name": "情缘蛋糕店",
+          "imgUrl": "../../src/assets/near/near7.png",
+          "start": "../../src/assets/near/start.png",
+           "detailpath":"../../src/assets/detail/dangao.jpg"
+        }
+        
+      ],
+      "subjects2": [
+        {
+          "id": 1,
+          "comment":"999评论",
+          "name": "泰国大皇宫",
+          "imgUrl": "../../src/assets/near/near8.png",
+          "start": "../../src/assets/near/start.png"
+        },
+        {
+          "id": 2,
+           "comment":"916评论",
+          "name": "雪乡",
+          "imgUrl": "../../src/assets/near/near9.png",
+          "start": "../../src/assets/near/start.png"
+        },
+        {
+          "id": 3,
+           "comment":"616评论",
+          "name": "三亚",
+          "imgUrl": "../../src/assets/near/near10.png",
+          "start": "../../src/assets/near/start.png"
+        },
+        {
+          "id": 4,
+           "comment":"116评论",
+          "name": "冰雪大世界",
+          "imgUrl": "../../src/assets/near/near11.png",
+          "start": "../../src/assets/near/start.png"
+        },
+        {
+          "id": 5,
+           "comment":"716评论",
+          "name": "亚布力滑雪",
+          "imgUrl": "../../src/assets/near/near12.png",
+          "start": "../../src/assets/near/start.png"
+        },
+        {
+          "id": 6,
+           "comment":"816评论",
+          "name": "索菲亚大教堂",
+          "imgUrl": "../../src/assets/near/near13.png",
+          "start": "../../src/assets/near/start.png"
+        }
+        
+      ]
+    }
+}

@@ -1,6 +1,6 @@
 .destination-header{
-    height:0.5rem;
-    background: #ccc;
+    height:0.44rem;
+    background: #fbc227;
     @include flexbox();
     @include justify-content(space-around);
     @include align-items(center);
@@ -20,7 +20,7 @@
     .destination-search{
         width: 2.2rem;
         height: 0.3rem;
-        @include border(1px,#000,solid,0.1rem);
+        @include border(1px,#fff,solid,0.1rem);
         background: white;
         @include flexbox();
         @include justify-content(space-around);
@@ -38,32 +38,36 @@
             width: 1.9rem;
             height: 0.3rem;
             background: transparent;
-            @include border(1px,white,solid,0.1rem)
+         
         }
     }
 }
 .now-con{
-   margin-top: 0.5rem;
-    height:1.5rem;
+   margin-top: 0.44rem;
+    height:1.12rem;
     @include flexbox();
     @include justify-content(center);
     @include flex-direction(column);
     @include align-items(center);
     .now-con-top{
         width: 3rem;;
-        height:0.5rem;
-        line-height: 0.5rem;
+        height:0.34rem;
+        line-height: 0.34rem;
     }
     .now-img{
-        width: 3rem;
-        height:1rem;
+          width: 3rem;
+          height:0.7rem;
+       
         @include justify-content(space-between);
         @include flexbox();
         @include align-items(center);
         .now-img-con{
-            width: 0.9rem;
-            height:1rem;
-            background: gold;
+             width: 30%;
+            height:0.7rem;
+             img{
+                width: 100%;
+                height:100%;
+            }
         }
     }
 }
@@ -75,8 +79,8 @@
     @include align-items(center);
     .hot-con-top{
         width: 3rem;;
-        height:0.5rem;
-        line-height: 0.5rem;
+        height:0.1rem;
+        line-height: 0.1rem;
     }
     .hot-img{
         width: 3rem;
@@ -86,10 +90,35 @@
         @include flex-wrap(wrap);
         @include align-items(center);
         .hot-img-con{
-            width: 0.9rem;
-            height:1rem;
-            background: gold;
+           width: 0.9rem;
+            height:0.7rem;
+           
             margin-top: 0.15rem;
+            position: relative;
+            img{
+                width: 100%;
+                height:100%;
+            }
+            span{
+                display: block;
+                width: 0.6rem;
+                height: 0.19rem;
+                background: #000;
+                position: absolute;
+                opacity: 0.4;
+                top: 0.25rem;
+                left: 0.15rem;
+            }
+            p{
+                width: 0.6rem;
+                height: 0.19rem;
+                color: white;
+                text-align: center;
+                line-height: 0.19rem;
+                position: absolute;
+                top: 0.25rem;
+                left: 0.15rem;
+            }
         }
     }
 }

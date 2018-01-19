@@ -3,11 +3,12 @@
     <div class="zrym-con">
        <div class="rym-top">
        	 <h1>旅行者之选</h1>
-       	 <span>更多<i class="yo-ico">&#xe502;</i></span>
+       	 <span @click="skip('more')">更多<i class="yo-ico">&#xe502;</i></span>
        </div>
        <div class="rym_content">
-       	  <div v-for="rym in billboards" :key="rym.id" class="rym_com_img">
-       	  	<div class="con_img">
+       	  <div v-for="rym in billboards" :key="rym.id" class="rym_com_img" >
+       	  	<div @click="skip('detail',rym.id,rym.imgUrl)">
+       	  		<div class="con_img">
        	  		<img :src="rym.imgUrl" alt=""/>
        	  	</div>
        	  	<div class="con_name">
@@ -16,6 +17,8 @@
        	  	<div class="con_title">
        	  		<span>{{rym.title}}</span>
        	  	</div>
+       	  	</div>
+       	  	
        	  </div>
        </div>
        
@@ -26,6 +29,7 @@
 <script>
 import { Lazyload } from 'mint-ui';
 import { Toast } from 'mint-ui';
+import { Indicator } from 'mint-ui';
 import axios from 'axios'
 export default {
   name:'app-rym-con',
@@ -35,18 +39,19 @@ export default {
   	}
   },
   methods:{
-    skip(name){
+    skip(name,id,img){
+    
+    	localStorage.detil = JSON.stringify({id,img})
       this.$router.push({name})
+      
     },
     getData(){
+    
             let that = this  
             axios.get('/api/rym/remlist',{
             	  params:{count:10}
             }).then((response)=>{
-            	console.log(response,666)
                  that.billboards = response.data.data.subjects
-              
-                 
             })	 
       }
   },

@@ -6,14 +6,15 @@
     	</div>
     	<div class="now-img">
     		<div class="now-img-con">
-    			
+    			<img src="../../../assets/destination/lately1.png" alt="" />
     		</div>
     		<div class="now-img-con">
-    			
+    			<img src="../../../assets/destination/lately2.png" alt="" />
     		</div>
     		<div class="now-img-con">
-    			
+    			<img src="../../../assets/destination/lately3.png" alt="" />
     		</div>
+    		
     	</div>
     </div>
   </div>
